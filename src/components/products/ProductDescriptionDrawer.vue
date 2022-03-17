@@ -1,8 +1,9 @@
 <template>
-    <div class="drawer-background" :class="{ show: active}" @click="$emit('close-product-drawer')">
+    <div class="drawer-background" :class="{ show: active}" >
 
     
-    <div class="drawer" :class="{show: active}">
+   <div>
+             <div class="drawer" :class="{show: active}">
     <div class="drawer-close" @click="$emit('close-product-drawer')">X</div>
     
     
@@ -23,6 +24,7 @@
               </div>
     </div>
     </div>
+   </div>
   
     </div>
 </template>
@@ -89,11 +91,12 @@ export default {
         font-size: 1.5rem;
         padding: 5px;
         border-radius: 5px;
-        right: 10px;border: 2px solid gray;
-        color: gray;
+        right: 10px;border: 2px solid white;
+        color: white;
         width: 15px;
         float: right;
         cursor: pointer;
+       background-color: rgb(79, 160, 187);
 
         &:hover {
             background-color: lightgray;
